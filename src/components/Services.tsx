@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 
 const experiences = [
     {
-        title: 'Event Executive',
-        company: 'Creative Event',
-        period: 'March 2025 – Oct 2025',
+        title: 'Event Operation Executive',
+        company: 'KK Creative Event',
+        period: 'Mar 2025 – Oct 2025',
         responsibilities: [
             'Led the end-to-end management of corporate and social events, serving as the main bridge between clients, creative teams, and ground operations.',
             'Sourced and negotiated with vendors to secure cost-effective production materials without compromising on quality or brand standards.',
@@ -30,7 +30,7 @@ const experiences = [
         ],
     },
     {
-        title: 'Print & Event Executive',
+        title: 'Print & Event Operation',
         company: '303 Events',
         period: 'July 2022 – Oct 2024',
         responsibilities: [
@@ -45,23 +45,9 @@ const experiences = [
         ],
     },
     {
-        title: 'Graphic Designer',
-        company: 'Nazteh',
-        period: 'Dec 2021 – July 2022',
-        responsibilities: [
-            'Designed branding assets, social media visuals, and digital ads for multiple campaigns.',
-            'Created website content graphics (banners, landing page visuals, product images) to ensure brand consistency.',
-            'Collaborated with marketing teams on campaign strategies and storytelling concepts.',
-            'Adapted designs for multiple formats (desktop, mobile, print) while maintaining quality.',
-            'Developed brand style guides and visual identity systems for new product launches.',
-            'Produced motion graphics and animated content for social media engagement campaigns.',
-            'Conducted competitor analysis to inform design direction and stay ahead of industry trends.',
-        ],
-    },
-    {
         title: 'Graphic Designer cum Sales',
         company: 'HS Printing Solution',
-        period: 'Dec 2019 – Dec 2021',
+        period: 'Dec 2019 – Aug 2022',
         responsibilities: [
             'Managed client requests from design to final production, ensuring timely delivery of projects.',
             'Handled sales of corporate gifts and advertising products, building long-term client relationships.',

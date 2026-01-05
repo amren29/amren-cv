@@ -33,7 +33,7 @@ export default function AboutPage() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
                         >
-                            My career didn't start in a boardroom; it started on the production floor. As a Graphic Designer & Sales Executive at <strong className="text-black">HS Printing Solution</strong>, I learned the hard truth about the creative industry: a beautiful design is worthless if it can't be executed. I spent two years mastering the technical realities of production, checking proofs, correcting layouts, and ensuring color accuracy. But beyond the software, I managed client relationships from start to finish. I learned that "sales" wasn't just about closing a deal; it was about guiding a client from a vague idea to a tangible, high-quality product they were proud to hold in their hands.
+                            My career didn't start in a boardroom; it started on the production floor. As a Graphic Designer cum Sales at <strong className="text-black">HS Printing Solution</strong> from December 2019 to August 2022, I learned the hard truth about the creative industry: a beautiful design is worthless if it can't be executed. I managed client requests from design to final production, handled sales of corporate gifts and advertising products, and coordinated with the printing team to ensure accurate color matching and high-quality output. I conducted pre-print checks, generated sales leads, and trained junior designers on production-ready file preparation.
                         </motion.p>
 
                         <motion.p
@@ -42,7 +42,7 @@ export default function AboutPage() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.1 }}
                         >
-                            In 2022, I joined <strong className="text-black">303 Events</strong> seeking a bigger challenge. My role as a Print & Event Executive required me to scale my skills from 2D flyers to 3D experiences. I coordinated full-scale event productions, negotiated with vendors to protect margins, and supervised on-site teams to ensure flawless delivery. However, the biggest shift in my career happened here. I realized that executing the event was only half the battle; we had to sell it first.
+                            In July 2022, I joined <strong className="text-black">303 Events</strong> as Print & Event Operation, where I stayed until October 2024. My role required me to scale my skills from 2D flyers to 3D experiences. I coordinated the planning, production, and execution of printing and event projects, acted as the primary client contact, and conducted on-site supervision during events. I negotiated with suppliers, supported the design team with creative input, and managed print production workflows from file preparation to final delivery and quality control.
                         </motion.p>
 
                         <motion.p
@@ -51,7 +51,7 @@ export default function AboutPage() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            I expanded my scope into Sales and Digital Marketing, taking charge of managing campaigns on <strong className="text-black">Google Ads and Facebook Ads</strong>. I wasn't just designing the visuals anymore; I was analyzing the data, optimizing ad spend, and driving the actual conversions that kept the business growing. This experience transformed me from a "Creative" into a "Commercial Strategist" who understands how to balance operational costs with revenue goals.
+                            From November 2024 to February 2025, I stepped into a focused operational role at <strong className="text-black">YHP Event</strong> as Event Coordinator. I coordinated fast-paced logistical requirements for high-volume events, ensuring timely setup and teardown of equipment. I managed supplier schedules and inventory tracking, acted as the immediate on-ground support for operations, created detailed run-sheets and timelines, and liaised with venue managers to coordinate access, parking, and technical requirements.
                         </motion.p>
 
                         <motion.p
@@ -60,7 +60,7 @@ export default function AboutPage() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.3 }}
                         >
-                            Most recently, I have stepped into focused operational roles that demand speed and adaptability. As a <strong className="text-black">Contract Event Executive</strong> at <strong className="text-black">YHP Event</strong>, I managed high-volume logistical requirements, ensuring that complex setups and teardowns were executed with military precision during peak seasons. Following that, as an <strong className="text-black">Event Executive</strong> at <strong className="text-black">Creative Event</strong>, I bridged the gap between the creative department and ground operations, ensuring that the visual concept was never lost during the logistical execution.
+                            Most recently, from March 2025 to October 2025, I served as Event Operation Executive at <strong className="text-black">KK Creative Event</strong>. I led the end-to-end management of corporate and social events, serving as the main bridge between clients, creative teams, and ground operations. I sourced and negotiated with vendors, leveraged my design background to oversee the visual quality of event setups, managed event budgets, coordinated cross-functional teams, and developed post-event reports analyzing attendee feedback and ROI metrics.
                         </motion.p>
 
                         <motion.p

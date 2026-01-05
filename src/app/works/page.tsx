@@ -73,32 +73,93 @@ const allProjects = [
         image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop',
     },
     {
-        id: 10,
-        title: 'Exhibition Booth',
+        id: 14,
+        title: 'Exhibition Booth Concept',
         category: '3D Design',
         year: '2024',
-        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=600&fit=crop',
+        image: '/3D/1.3D.png',
     },
     {
-        id: 11,
-        title: 'Product Mockup',
+        id: 15,
+        title: 'Stage Design Visualization',
         category: '3D Design',
-        year: '2023',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
+        year: '2024',
+        image: '/3D/2.3D.png',
+    },
+    {
+        id: 16,
+        title: 'Retail Display Setup',
+        category: '3D Design',
+        year: '2024',
+        image: '/3D/3.3D.png',
+    },
+    {
+        id: 17,
+        title: 'Event Space Layout',
+        category: '3D Design',
+        year: '2024',
+        image: '/3D/4.3D.png',
+    },
+    {
+        id: 18,
+        title: 'Product Launch Stage',
+        category: '3D Design',
+        year: '2024',
+        image: '/3D/5.3D.png',
+    },
+    {
+        id: 19,
+        title: 'Booth Rendering',
+        category: '3D Design',
+        year: '2024',
+        image: '/3D/6.3D.png',
+    },
+    {
+        id: 20,
+        title: 'Creative Installation',
+        category: '3D Design',
+        year: '2024',
+        image: '/3D/7.3D.png',
     },
     {
         id: 12,
-        title: 'Portfolio Website',
+        title: 'East My Media',
         category: 'Web Design',
         year: '2024',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+        image: 'https://api.microlink.io/?url=https%3A%2F%2Feastmymedia.my&screenshot=true&meta=false&embed=screenshot.url',
+        link: 'https://eastmymedia.my'
     },
     {
         id: 13,
-        title: 'E-commerce Site',
+        title: 'GM Rental Car Sandakan',
+        category: 'Web Design',
+        year: '2024',
+        image: 'https://api.microlink.io/?url=https%3A%2F%2Fgmrentalcarsandakan.com&screenshot=true&meta=false&embed=screenshot.url',
+        link: 'https://gmrentalcarsandakan.com'
+    },
+    {
+        id: 21,
+        title: 'Sabah Printer Supply',
+        category: 'Web Design',
+        year: '2024',
+        image: 'https://api.microlink.io/?url=https%3A%2F%2Fsabahprintersupply.com&screenshot=true&meta=false&embed=screenshot.url',
+        link: 'https://sabahprintersupply.com'
+    },
+    {
+        id: 22,
+        title: 'Frezora Store',
         category: 'Web Design',
         year: '2023',
-        image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop',
+        image: 'https://api.microlink.io/?url=https%3A%2F%2Ffrezorastore.com&screenshot=true&meta=false&embed=screenshot.url',
+        link: 'https://frezorastore.com'
+    },
+    {
+        id: 23,
+        title: 'Zylora Shop',
+        category: 'Web Design',
+        year: '2023',
+        image: 'https://api.microlink.io/?url=https%3A%2F%2Fzylorashop.com&screenshot=true&meta=false&embed=screenshot.url',
+        link: 'https://zylorashop.com'
     },
 ];
 
@@ -147,8 +208,8 @@ export default function WorksPage() {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeCategory === category
-                                    ? 'bg-black text-white'
-                                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                                ? 'bg-black text-white'
+                                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                                 }`}
                         >
                             {category}
@@ -158,38 +219,53 @@ export default function WorksPage() {
 
                 {/* Projects grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    {filteredProjects.map((project, index) => (
-                        <motion.article
-                            key={project.id}
-                            initial={{ opacity: 0, y: 40 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: index * 0.05 }}
-                            className="group cursor-pointer"
-                        >
-                            <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-black/5 mb-4">
-                                <Image
-                                    src={project.image}
-                                    alt={project.title}
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
+                    {filteredProjects.map((project, index) => {
+                        const ProjectCard = (
+                            <motion.article
+                                key={project.id}
+                                initial={{ opacity: 0, y: 40 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: index * 0.05 }}
+                                className="group cursor-pointer"
+                            >
+                                <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-black/5 mb-4">
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                        unoptimized={project.category === 'Web Design'}
+                                    />
 
-                                {/* Arrow Icon - Top Right */}
-                                <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
-                                    <ArrowUpRight className="w-5 h-5 text-black" />
+                                    {/* Arrow Icon - Top Right */}
+                                    <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
+                                        <ArrowUpRight className="w-5 h-5 text-black" />
+                                    </div>
                                 </div>
-                            </div>
 
-                            {/* Card Details */}
-                            <div className="flex justify-between items-start">
-                                <h3 className="text-lg font-medium text-black">{project.title}</h3>
-                                <div className="text-right">
-                                    <span className="block text-sm font-medium text-black mb-0.5">{project.year}</span>
-                                    <span className="block text-xs text-muted">{project.category}</span>
+                                {/* Card Details */}
+                                <div className="flex justify-between items-start">
+                                    <h3 className="text-lg font-medium text-black group-hover:underline">{project.title}</h3>
+                                    <div className="text-right">
+                                        <span className="block text-sm font-medium text-black mb-0.5">{project.year}</span>
+                                        <span className="block text-xs text-muted">{project.category}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.article>
-                    ))}
+                            </motion.article>
+                        );
+
+                        // @ts-ignore
+                        if (project.link) {
+                            return (
+                                // @ts-ignore
+                                <a key={project.id} href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                                    {ProjectCard}
+                                </a>
+                            );
+                        }
+
+                        return ProjectCard;
+                    })}
                 </div>
 
                 {/* Empty state */}
