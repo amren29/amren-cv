@@ -37,7 +37,7 @@ export default function Hero() {
                             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                         </a>
                         <a
-                            href="/resume.pdf"
+                            href="/Mohamed%20Amrin%20-%20CV%20(2026).pdf"
                             download
                             className="inline-flex items-center gap-2 px-6 py-2.5 text-sm font-medium rounded-full bg-black text-white hover:bg-black/80 transition-all group"
                         >

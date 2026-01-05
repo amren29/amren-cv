@@ -97,7 +97,7 @@ export default function AboutPage() {
                             <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                         </a>
                         <a
-                            href="/resume.pdf"
+                            href="/Mohamed%20Amrin%20-%20CV%20(2026).pdf"
                             download
                             className="inline-flex items-center gap-2 px-8 py-3 text-base font-medium rounded-full bg-black text-white hover:bg-black/80 transition-all group"
                         >
