@@ -6,7 +6,7 @@ const experiences = [
     {
         title: 'Event Operation Executive',
         company: 'KK Creative Event',
-        period: 'Mar 2025 – Oct 2025',
+        period: 'Mar 2025 – Present',
         responsibilities: [
             'Led the end-to-end management of corporate and social events, serving as the main bridge between clients, creative teams, and ground operations.',
             'Sourced and negotiated with vendors to secure cost-effective production materials without compromising on quality or brand standards.',

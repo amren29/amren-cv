@@ -60,7 +60,7 @@ export default function AboutPage() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.3 }}
                         >
-                            Most recently, from March 2025 to October 2025, I served as Event Operation Executive at <strong className="text-black">KK Creative Event</strong>. I led the end-to-end management of corporate and social events, serving as the main bridge between clients, creative teams, and ground operations. I sourced and negotiated with vendors, leveraged my design background to oversee the visual quality of event setups, managed event budgets, coordinated cross-functional teams, and developed post-event reports analyzing attendee feedback and ROI metrics.
+                            Most recently, since March 2025, I have been serving as Event Operation Executive at <strong className="text-black">KK Creative Event</strong>. I lead the end-to-end management of corporate and social events, serving as the main bridge between clients, creative teams, and ground operations. I source and negotiate with vendors, leverage my design background to oversee the visual quality of event setups, manage event budgets, coordinate cross-functional teams, and develop post-event reports analyzing attendee feedback and ROI metrics.
                         </motion.p>
 
                         <motion.p
